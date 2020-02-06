@@ -11,16 +11,11 @@ using UnityEngine.Serialization;
 
 namespace OTHStudios
 {
-    // This class coordinates In-App-Purchases (IAP) for the application.  Follow the
-    // instructions in the Readme for setting up IAP on the Oculus Dashboard.  Only
-    // one consumable IAP item is used is the demo: the Power-Ball!
+    // This class coordinates In-App-Purchases (IAP) for the application
     public class OTHIAPManager : MonoBehaviour
     {
         
 #if DISABLESTEAMWORKS
-
-        // [Tooltip("where to record to display the current price for the IAP item")]
-        // [SerializeField] private Text m_priceText;
 
         [Tooltip("The SKU of configured Oculus IAP product")]
         [SerializeField] private List<string> skus;
